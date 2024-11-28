@@ -32,7 +32,11 @@
                         <label><span>*</span>Your Name</label>
                     </td>
                     <td>
-                        <input size="" type="text" name="uname" id="uname">
+                        <div class="parent">
+                            <div class="child">
+                                <input size="30" type="text" name="uname" id="uname">
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -40,7 +44,11 @@
                         <label><span>*</span>E-Mail ID</label>
                     </td>
                     <td>
-                        <input type="email" name="mail" id="mail">
+                        <div class="parent">
+                            <div class="child">
+                                <input size="40" type="email" name="mail" id="mail">
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -48,17 +56,36 @@
                         <label>Alternate E-Mail ID</label>
                     </td>
                     <td>
-                        <input type="email" name="Amail" id="Amail">
+                        <div class="parent">
+                            <div class="child">
+                                <input size="40" type="email" name="Amail" id="Amail">
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="in-lable" rowspan="2">
+                    <td class="in-lable">
                         <label>Your Phone</label>
                     </td>
-                    
-                        <td><label>Country Code</label></td>   <td><label>City Code</label></td>   <td><label>Phone Number</label></td>
+                    <td>
+                        <div class="parent">
+                            <div class="child">
+                                <label>Country Code</label>
+                                <input size="15" type="text" name="country-code">
+                            </div>
+                            <div class="child">
+                                <label>City Code</label>
+                                <input size="10" type="text" name="city-code">
+                            </div>
+                            <div class="child">
+                                <label>Phone Number</label>
+                                <input size="" type="text" name="phone">
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td><label>Country Code</label></td>   <td><label>City Code</label></td>   <td><label>Phone Number</label></td> -->
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td >
                         <input size="10" type="text" name="country-code">
                     </td>
@@ -68,13 +95,17 @@
                     <td>
                         <input size="" type="text" name="phone">
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td class="in-lable">
                         <label><span>*</span>Your Postal Adress</label>
                     </td>
                     <td>
-                        <textarea name="postal" id="postal"></textarea>
+                        <div class="parent">
+                            <div class="child">
+                                <textarea name="postal" id="postal"></textarea>
+                            </div>
+                        </div>
                     </td>
                 </tr>
 
@@ -83,13 +114,17 @@
                         <label><span>*</span>Country</label>
                     </td>
                     <td>
-                        <select name="country" id="country">
-                            <option value="">-------- Select One ---------</option>
-                            <option>Egypt</option>
-                            <option>Saudi Arabia</option>
-                            <option>Qatar</option>
+                        <div class="parent">
+                            <div class="child">
+                                <select style="width: 300px;" name="country" id="country">
+                                    <option value="">------------------------- Select One -------------------------</option>
+                                    <option>Egypt</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Qatar</option>
 
-                        </select>
+                                </select>
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -97,7 +132,11 @@
                         <label><span>*</span>Password</label>
                     </td>
                     <td>
-                        <input size="" type="password" name="password" id="password">
+                        <div class="parent">
+                            <div class="child">
+                                <input size="" type="password" name="password" id="password">
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -105,7 +144,11 @@
                         <label><span>*</span>Re - Enter Password</label>
                     </td>
                     <td>
-                        <input type="text">
+                        <div class="parent">
+                            <div class="child">
+                                <input type="text">
+                            </div>
+                        </div>
                     </td>
                 </tr>
             </table>
