@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="roadMap.html">Road Map</a></li>
+            <li><a href="register.html">Registration Form</a></li>
+            <li><a href="https://iti.gov.eg/home" target="_blank">Contact</a></li>
+        </ul>
+        <img src="../img/ITI_logo.png" width="150px" height="70px">
+        <div class="clear-fix"></div>
+    </header>
+
+
+    <div class="register-form">
+        <h2>Register - Creat Account</h2>
+        <p>Field marked with <span>*</span>are compulsory
+            fields</p>
+        <form action="../index.html" method="post">
+            <table>
+                <tr>
+                    <td class="in-lable">
+                        <label><span>*</span>Your Name</label>
+                    </td>
+                    <td>
+                        <input size="" type="text" name="uname" id="uname">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="in-lable">
+                        <label><span>*</span>E-Mail ID</label>
+                    </td>
+                    <td>
+                        <input type="email" name="mail" id="mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="in-lable">
+                        <label>Alternate E-Mail ID</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Amail" id="Amail">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="in-lable" rowspan="2">
+                        <label>Your Phone</label>
+                    </td>
+                    
+                        <td><label>Country Code</label></td>   <td><label>City Code</label></td>   <td><label>Phone Number</label></td>
+                </tr>
+                <tr>
+                    <td >
+                        <input size="10" type="text" name="country-code">
+                    </td>
+                    <td>
+                        <input size="" type="text" name="city-code">
+                    </td>
+                    <td>
+                        <input size="" type="text" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="in-lable">
+                        <label><span>*</span>Your Postal Adress</label>
+                    </td>
+                    <td>
+                        <textarea name="postal" id="postal"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="in-lable">
+                        <label><span>*</span>Country</label>
+                    </td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="">-------- Select One ---------</option>
+                            <option>Egypt</option>
+                            <option>Saudi Arabia</option>
+                            <option>Qatar</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="in-lable">
+                        <label><span>*</span>Password</label>
+                    </td>
+                    <td>
+                        <input size="" type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="in-lable">
+                        <label><span>*</span>Re - Enter Password</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+
+            <input type="checkbox" name="accept">
+            <label style="color: rgb(32, 122, 80);">I accept the <a href="">Terms of use</a></label>
+            <br>
+            <input type="submit" value="Continue >>">
+
+            <input type="reset">
+        </form>
+    </div>
+
+    <footer>
+        <hr>
+        <p style="color: rgb(31, 31, 119); text-align: center;"><b>Copyright 2021 by Noha Salah &reg;. All Rights
+                Reserved.</b></p>
+    </footer>
+</body>
+
+</html>
