@@ -1,3 +1,18 @@
+// document.body.style.display ="flex";
+// document.body.style.justifyContent ="center";
+// document.body.style.alignItems ="center";
+
+let container = document.createElement("div");
+container.style.margin="250px"
+container.style.padding="25px"
+container.style.borderRadius="10px"
+container.style.backgroundColor="tan"
+document.body.appendChild(container);
+
+let title = document.createElement("h1");
+title.innerText += "To Do List";
+container.appendChild(title);
+
 let inp = document.createElement("input");
 inp.setAttribute("type", "text");
 inp.setAttribute("placeholder", "Add your task here");
@@ -5,7 +20,7 @@ inp.style.border = "1px solid grey";
 inp.style.borderRadius = "25px";
 inp.style.padding = "10px 20px";
 inp.style.margin = "5px ";
-document.body.appendChild(inp);
+container.appendChild(inp);
 
 let btn = document.createElement("button");
 btn.innerText += "Add";
@@ -13,17 +28,17 @@ btn.style.border = "none";
 btn.style.borderRadius = "25px";
 btn.style.padding = "10px 20px";
 btn.addEventListener("click",addTask);
-document.body.appendChild(btn);
+container.appendChild(btn);
 
-const taskList = document.createElement("div");
-document.body.appendChild(taskList);
+let taskList = document.createElement("div");
+container.appendChild(taskList);
 
 function addTask() {
-    const tasktxt = inp.value;
+    let tasktxt = inp.value;
     if (tasktxt === "") {
-      alert("Please enter a task!");
-      return;
-    }
+        alert("Please enter a task!");
+        return;
+      }
     inp.value = "";
 
 
