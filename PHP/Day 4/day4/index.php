@@ -1,24 +1,3 @@
-<?php 
-include('config.php');
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $gender = $_POST['gender'];
-    $receive = isset($_POST['receive']) ? 'on' : 'off';
-    
-
-    $sql = "INSERT INTO users(name, Email, gender, receive_email) 
-    VALUES ('$name', '$email', '$gender', '$receive')";
-    $retval = mysqli_query($conn,$sql);
-
-    if(! $retval ) {
-        die('Could not insert to table: ' . mysqli_connect_error($retval));
-     }
-      
-     echo "<br>Data inserted to table successfully\n";
-     mysqli_close($conn);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,9 +75,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
                     <td><?php echo $row['gender']; ?></td>
                     <td><?php echo $row['receive_email']; ?></td>
                     <td>
-                        <a href="/CMS-24/day4/iconsAction/view.php?id=<?php echo $row['id'];?>"><img class="icon" src="./icons/eye (1).png"></a>
-                        <img class="icon" src="./icons/edit.png">
-                        <img class="icon" src="./icons/trash.png">
+                        <a href="/CMS-24/day4/iconsAction/view.php?id=<?php echo $row['id']; ?>"><img class="icon" src="./icons/eye (1).png"></a>
+                        <a href="/CMS-24/day4/iconsAction/edit.php?id=<?php echo $row['id']; ?>"><img class="icon" src="./icons/edit.png"></a>
+                        <a href="/CMS-24/day4/iconsAction/delete.php?id=<?php echo $row['id']; ?>"><img class="icon" src="./icons/trash.png"></a>
                     </td>
                 </tr><?php }
                 } else {
